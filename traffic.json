@@ -1,0 +1,1864 @@
+var traffic = [
+  {
+    "point": "AL1707",
+    "median": 343,
+    "site_name": "Site A27 between A3(M) J5 and A2030 (AL1707); GPS Ref: 469576;105585 - 467535:104349; B",
+    "min": 0.25,
+    "std": 277.5848296068209
+  },
+  {
+    "point": "AL1708",
+    "median": 681,
+    "site_name": "Site A27 between A2030 and A3(M) J5 (AL1708); GPS Ref: 467393;104334 - 469272:105464; A",
+    "min": 21,
+    "std": 503.1645676186104
+  },
+  {
+    "point": "AL1709",
+    "median": 606.5,
+    "site_name": "Site A27 between M27 J12 and A2030 (AL1709); GPS Ref: 465949;104538 - 467393:104334; A",
+    "min": 18.5,
+    "std": 457.22189105134186
+  },
+  {
+    "point": "AL1710",
+    "median": 603,
+    "site_name": "Site A27 between A2030 and M27 J12 (AL1710); GPS Ref: 467535;104349 - 465990:104517; B",
+    "min": 18.5,
+    "std": 446.9756811522404
+  },
+  {
+    "point": "AL1791A",
+    "median": 799,
+    "site_name": "Site A2 between A296 and M25 J2 (AL1791A); GPS Ref: 558642;172703 - 555816:172091; B",
+    "min": 1,
+    "std": 457.73984655510685
+  },
+  {
+    "point": "AL1811",
+    "median": 135,
+    "site_name": "Site A2 between A260 and A2050 (AL1811); GPS Ref: 622495;148891 - 617360:155276; B",
+    "min": 1.25,
+    "std": 110.06606289517929
+  },
+  {
+    "point": "AL1814",
+    "median": 111.5,
+    "site_name": "Site A2 between A2050 and A28 (AL1814); GPS Ref: 617360;155276 - 613653:156751; B",
+    "min": 1.25,
+    "std": 89.60656717857901
+  },
+  {
+    "point": "AL1815",
+    "median": 106,
+    "site_name": "Site A2 between A28 and A2050 (AL1815); GPS Ref: 613666;156751 - 617349:155289; A",
+    "min": 0.5,
+    "std": 90.63573949480157
+  },
+  {
+    "point": "AL1822A",
+    "median": 667.5,
+    "site_name": "Site A2 between A227 and M2 J1 (AL1822A); GPS Ref: 564131;171196 - 570188:169584; A",
+    "min": 6,
+    "std": 436.2814090873513
+  },
+  {
+    "point": "AL2340",
+    "median": 614,
+    "site_name": "Site A2 between M25 J2 and A2018 (AL2340); GPS Ref: 555816;172091 - 551541:173012; B",
+    "min": 11,
+    "std": 352.4213614774608
+  },
+  {
+    "point": "AL2356",
+    "median": 179,
+    "site_name": "Site A2 between M2 J7 and A2050 (AL2356); GPS Ref: 603991;159842 - 611649:158084; A",
+    "min": 2,
+    "std": 133.5433243191959
+  },
+  {
+    "point": "AL2357",
+    "median": 178.5,
+    "site_name": "Site A2 between A2050 and M2 J7 (AL2357); GPS Ref: 611521;158132 - 603999:159834; B",
+    "min": 1,
+    "std": 129.62787423227107
+  },
+  {
+    "point": "AL267",
+    "median": 205,
+    "site_name": "Site A14 between A1088 and A134 (AL267); GPS Ref: 597557;263222 - 586752:263603; B",
+    "min": 0.25,
+    "std": 179.64039200551503
+  },
+  {
+    "point": "AL270",
+    "median": 218,
+    "site_name": "Site A14 between A143 and A134 (AL270); GPS Ref: 585562;265399 - 586653:263661; A",
+    "min": 1.5,
+    "std": 193.95821430500138
+  },
+  {
+    "point": "AL272",
+    "median": 231,
+    "site_name": "Site A14 between A134 and A143 (AL272); GPS Ref: 586752;263603 - 585689:265314; B",
+    "min": 0.25,
+    "std": 188.27508017116065
+  },
+  {
+    "point": "AL283",
+    "median": 175,
+    "site_name": "Site A14 between A1302 and A1101 (AL283); GPS Ref: 582523;265457 - 585281:265416; A",
+    "min": 0.25,
+    "std": 138.45980131754877
+  },
+  {
+    "point": "AL2852B",
+    "median": 202,
+    "site_name": "Site A14 between A1303 Eastbound and A1303 Eastbound (AL2852B); GPS Ref: 551435;259644 - 557790:260134; A",
+    "min": 1,
+    "std": 148.8847669112497
+  },
+  {
+    "point": "AL286",
+    "median": 181,
+    "site_name": "Site A14 between A11 and A142 (AL286); GPS Ref: 558100;260340 - 563400:265987; A",
+    "min": 0.25,
+    "std": 173.98105613112227
+  },
+  {
+    "point": "AL288",
+    "median": 374,
+    "site_name": "Site A14 between A142 and A11 (AL288); GPS Ref: 563414;265975 - 558086:260315; B",
+    "min": 0.5,
+    "std": 268.47032728176373
+  },
+  {
+    "point": "AL3186",
+    "median": 77,
+    "site_name": "Site A2 between A260 and A256 (AL3186); GPS Ref: 622328;149176 - 630109:144622; A",
+    "min": 1,
+    "std": 59.50317966797018
+  },
+  {
+    "point": "AL440",
+    "median": 228,
+    "site_name": "Site A14 between A510 and A6116 (AL440); GPS Ref: 493821;277055 - 498295:277966; A",
+    "min": 1,
+    "std": 142.7875501028216
+  },
+  {
+    "point": "LM1008A",
+    "median": 643,
+    "site_name": "Site M6 between M6 J4 and M6 J4A (LM1008A); GPS Ref: 420042;286561 - 417169:290342; A",
+    "min": 0.25,
+    "std": 351.3289456042181
+  },
+  {
+    "point": "LM1009A",
+    "median": 433,
+    "site_name": "Site M6 between M6 J4A and M6 J4 (LM1009A); GPS Ref: 417352;290177 - 419923:286637; B",
+    "min": 0.25,
+    "std": 253.86109798782033
+  },
+  {
+    "point": "LM101",
+    "median": 232,
+    "site_name": "Site M11 between M11 J14 and A14 (LM101); GPS Ref: 541727;260870 - 540628:262228; A",
+    "min": 11,
+    "std": 145.0750588962627
+  },
+  {
+    "point": "LM1010",
+    "median": 824,
+    "site_name": "Site M6 between M6 J4A and M6 J5 (LM1010); GPS Ref: 417169;290342 - 413905:290162; A",
+    "min": 1,
+    "std": 461.26646366963615
+  },
+  {
+    "point": "LM1012",
+    "median": 708,
+    "site_name": "Site M6 between M6 J6 and M6 J5 (LM1012); GPS Ref: 409448;290186 - 413902:290176; B",
+    "min": 0.25,
+    "std": 390.4511244806714
+  },
+  {
+    "point": "LM1013",
+    "median": 705.5,
+    "site_name": "Site M6 between M6 J5 and M6 J6 (LM1013); GPS Ref: 413905;290162 - 409474:290142; A",
+    "min": 0.5,
+    "std": 380.0880418232666
+  },
+  {
+    "point": "LM1017",
+    "median": 694.75,
+    "site_name": "Site M6 between M6 J7 and M6 J8 (LM1017); GPS Ref: 404712;295019 - 401587:295576; A",
+    "min": 1.25,
+    "std": 447.3863053338126
+  },
+  {
+    "point": "LM1018",
+    "median": 810,
+    "site_name": "Site M6 between M6 J8 and M6 J7 (LM1018); GPS Ref: 401599;295598 - 404474:294997; B",
+    "min": 9.5,
+    "std": 432.83143598062367
+  },
+  {
+    "point": "LM1019",
+    "median": 956,
+    "site_name": "Site M6 between M6 J8 and M6 J9 (LM1019); GPS Ref: 401587;295576 - 399916:296502; A",
+    "min": 0.25,
+    "std": 516.5886239005863
+  },
+  {
+    "point": "LM1020",
+    "median": 981,
+    "site_name": "Site M6 between M6 J9 and M6 J8 (LM1020); GPS Ref: 399846;296554 - 401599:295598; B",
+    "min": 0.25,
+    "std": 497.9745026267683
+  },
+  {
+    "point": "LM1023",
+    "median": 221,
+    "site_name": "Site M4 between M4 J21 and M4 J22 (LM1023); GPS Ref: 360127;185747 - 354469:185810; A",
+    "min": 0.25,
+    "std": 141.2345280347191
+  },
+  {
+    "point": "LM1072",
+    "median": 779,
+    "site_name": "Site M25 between M25 J1B and M25 J1A (LM1072); GPS Ref: 555701;173326 - 555887:175060; B",
+    "min": 0.25,
+    "std": 391.5288234227385
+  },
+  {
+    "point": "LM1073",
+    "median": 833,
+    "site_name": "Site M25 between M25 J1A and M25 J1B (LM1073); GPS Ref: 555911;175059 - 555715:173416; A",
+    "min": 0.25,
+    "std": 411.67526380921487
+  },
+  {
+    "point": "LM116",
+    "median": 436,
+    "site_name": "Site M11 between M11 J6 and M11 J5 (LM116); GPS Ref: 547026;199993 - 544332:195577; B",
+    "min": 0.75,
+    "std": 238.92928566005787
+  },
+  {
+    "point": "LM117",
+    "median": 614,
+    "site_name": "Site M11 between M11 J6 and M11 J7 (LM117); GPS Ref: 547000;199982 - 547655:207024; A",
+    "min": 0.75,
+    "std": 322.2885173166807
+  },
+  {
+    "point": "LM118",
+    "median": 629,
+    "site_name": "Site M11 between M11 J7 and M11 J6 (LM118); GPS Ref: 547718;207174 - 547026:199993; B",
+    "min": 0.5,
+    "std": 319.2383783470394
+  },
+  {
+    "point": "LM1518",
+    "median": 305.75,
+    "site_name": "Site M42 between M42 J9S and M42 J9 (LM1518); GPS Ref: 418431;292340 - 418606:293355; A",
+    "min": 0.25,
+    "std": 220.70644480022858
+  },
+  {
+    "point": "LM202",
+    "median": 263,
+    "site_name": "Site M1 between M1 J2 and M1 J1 (LM202); GPS Ref: 522150;190675 - 522786:187514; B",
+    "min": 0.25,
+    "std": 174.6278847822537
+  },
+  {
+    "point": "LM204",
+    "median": 404,
+    "site_name": "Site M1 between M1 J4 and M1 J2 (LM204); GPS Ref: 517331;194436 - 522150:190675; B",
+    "min": 0.25,
+    "std": 255.33056624362877
+  },
+  {
+    "point": "LM205",
+    "median": 451,
+    "site_name": "Site M1 between M1 J30 and M1 J31 (LM205); GPS Ref: 447009;376798 - 447769:385190; A",
+    "min": 0.25,
+    "std": 360.2747327526857
+  },
+  {
+    "point": "LM206",
+    "median": 385.5,
+    "site_name": "Site M1 between M1 J31 and M1 J30 (LM206); GPS Ref: 447799;385343 - 447047:376887; B",
+    "min": 0.25,
+    "std": 266.00200632615855
+  },
+  {
+    "point": "LM208",
+    "median": 724,
+    "site_name": "Site M1 between M1 J32 and M1 J31 (LM208); GPS Ref: 447215;389111 - 447799:385343; B",
+    "min": 23,
+    "std": 429.979475023032
+  },
+  {
+    "point": "LM220",
+    "median": 390,
+    "site_name": "Site M1 between M1 J36 and M1 J35A (LM220); GPS Ref: 434866;400128 - 435962:397853; B",
+    "min": 0.25,
+    "std": 309.3463082907562
+  },
+  {
+    "point": "LM221",
+    "median": 468,
+    "site_name": "Site M1 between M1 J36 and M1 J37 (LM221); GPS Ref: 434922;400040 - 432204:405842; A",
+    "min": 1,
+    "std": 326.5238506113788
+  },
+  {
+    "point": "LM227",
+    "median": 229,
+    "site_name": "Site M1 between M1 J39 and M1 J40 (LM227); GPS Ref: 431230;417165 - 429482:420820; A",
+    "min": 0.25,
+    "std": 225.9280725007392
+  },
+  {
+    "point": "LM228",
+    "median": 247.5,
+    "site_name": "Site M1 between M1 J40 and M1 J39 (LM228); GPS Ref: 429483;420945 - 431275:417288; B",
+    "min": 0.25,
+    "std": 256.30641404407777
+  },
+  {
+    "point": "LM229",
+    "median": 250,
+    "site_name": "Site M1 between M1 J40 and M1 J41 (LM229); GPS Ref: 429482;420820 - 430713:424416; A",
+    "min": 0.25,
+    "std": 259.6796860915406
+  },
+  {
+    "point": "LM230",
+    "median": 370,
+    "site_name": "Site M1 between M1 J41 and M1 J40 (LM230); GPS Ref: 430819;424476 - 429483:420945; B",
+    "min": 0.25,
+    "std": 373.9620847193814
+  },
+  {
+    "point": "LM245",
+    "median": 485,
+    "site_name": "Site M1 between M1 J4 and M1 J5 (LM245); GPS Ref: 517325;194422 - 512933:198197; A",
+    "min": 2,
+    "std": 290.95235127225436
+  },
+  {
+    "point": "LM248",
+    "median": 544,
+    "site_name": "Site M1 between M1 J6 and M1 J5 (LM248); GPS Ref: 511956;201960 - 512848:198292; B",
+    "min": 0.25,
+    "std": 339.7104558411777
+  },
+  {
+    "point": "LM265",
+    "median": 306,
+    "site_name": "Site M20 between M20 J2 and M20 J1 (LM265); GPS Ref: 559496;160151 - 552162:167883; B",
+    "min": 0.5,
+    "std": 204.6320873115699
+  },
+  {
+    "point": "LM266",
+    "median": 300,
+    "site_name": "Site M20 between M20 J1 and M20 J2 (LM266); GPS Ref: 552351;167889 - 559459:160186; A",
+    "min": 3,
+    "std": 203.5038511840888
+  },
+  {
+    "point": "LM268",
+    "median": 242,
+    "site_name": "Site M20 between M20 J2 Eastbound and M20 J2 Eastbound (LM268); GPS Ref: 559459;160186 - 561512:159400; A",
+    "min": 0.25,
+    "std": 161.53281125026035
+  },
+  {
+    "point": "LM26A",
+    "median": 401,
+    "site_name": "Site A1(M) between A1(M) J46 and A1(M) J47 (LM26A); GPS Ref: 441164;449907 - 440885:457178; A",
+    "min": 0.25,
+    "std": 263.4193842570933
+  },
+  {
+    "point": "LM271",
+    "median": 583,
+    "site_name": "Site M20 between M20 J4 and M20 J3 (LM271); GPS Ref: 569197;159424 - 564617:159130; B",
+    "min": 10,
+    "std": 354.5720684871426
+  },
+  {
+    "point": "LM272",
+    "median": 572,
+    "site_name": "Site M20 between M20 J3 and M20 J4 (LM272); GPS Ref: 564995;159251 - 569084:159496; A",
+    "min": 0.75,
+    "std": 366.5646543196216
+  },
+  {
+    "point": "LM273",
+    "median": 672,
+    "site_name": "Site M20 between M20 J5 and M20 J4 (LM273); GPS Ref: 573367;158144 - 569197:159424; B",
+    "min": 1,
+    "std": 392.50114422320814
+  },
+  {
+    "point": "LM274",
+    "median": 640,
+    "site_name": "Site M20 between M20 J4 and M20 J5 (LM274); GPS Ref: 569084;159496 - 573253:158198; A",
+    "min": 0.5,
+    "std": 417.12939744695495
+  },
+  {
+    "point": "LM281",
+    "median": 338,
+    "site_name": "Site M20 between M20 J9 and M20 J8 (LM281); GPS Ref: 600676;144030 - 582754:154598; B",
+    "min": 0.25,
+    "std": 195.60374771500895
+  },
+  {
+    "point": "LM282",
+    "median": 330,
+    "site_name": "Site M20 between M20 J8 and M20 J9 (LM282); GPS Ref: 582755;154621 - 600581:144122; A",
+    "min": 1,
+    "std": 203.73486510753588
+  },
+  {
+    "point": "LM284",
+    "median": 324,
+    "site_name": "Site M20 between M20 J9 and M20 J10 (LM284); GPS Ref: 600581;144122 - 603685:141658; A",
+    "min": 9,
+    "std": 199.1052788871061
+  },
+  {
+    "point": "LM287",
+    "median": 778,
+    "site_name": "Site M23 between M23 J10A and M23 J10 (LM287); GPS Ref: 530261;135905 - 530126:138594; B",
+    "min": 32,
+    "std": 458.50910745029137
+  },
+  {
+    "point": "LM291",
+    "median": 521,
+    "site_name": "Site M23 between M23 J9 and M23 J8 (LM291); GPS Ref: 530519;141575 - 530711:153302; B",
+    "min": 0.25,
+    "std": 329.4450241367083
+  },
+  {
+    "point": "LM292",
+    "median": 669,
+    "site_name": "Site M23 between M23 J8 and M23 J9 (LM292); GPS Ref: 530725;153322 - 530561:141670; A",
+    "min": 0.25,
+    "std": 345.87993043927474
+  },
+  {
+    "point": "LM296",
+    "median": 585.75,
+    "site_name": "Site M23 between M23 J9 and M23 J10 (LM296); GPS Ref: 530561;141670 - 530158:138749; A",
+    "min": 17,
+    "std": 326.8999109533248
+  },
+  {
+    "point": "LM311",
+    "median": 981,
+    "site_name": "Site M25 between M25 J16 and M25 J17 (LM311); GPS Ref: 501900;185660 - 503119:194176; A",
+    "min": 1,
+    "std": 524.4389519226434
+  },
+  {
+    "point": "LM312",
+    "median": 913,
+    "site_name": "Site M25 between M25 J17 and M25 J16 (LM312); GPS Ref: 503211;194253 - 501919:185681; B",
+    "min": 1,
+    "std": 469.5929171338838
+  },
+  {
+    "point": "LM315",
+    "median": 1084,
+    "site_name": "Site M25 between M25 J18 and M25 J19 (LM315); GPS Ref: 504180;196190 - 506684:198743; A",
+    "min": 17,
+    "std": 593.6037796728958
+  },
+  {
+    "point": "LM319A",
+    "median": 673,
+    "site_name": "Site M25 between M25 J1B and M25 J2 (LM319A); GPS Ref: 555715;173416 - 555726:172086; A",
+    "min": 0.25,
+    "std": 335.9867930767084
+  },
+  {
+    "point": "LM320A",
+    "median": 651,
+    "site_name": "Site M25 between M25 J2 and M25 J1B (LM320A); GPS Ref: 555706;172062 - 555701:173326; B",
+    "min": 0.25,
+    "std": 350.1784990765475
+  },
+  {
+    "point": "LM322",
+    "median": 817,
+    "site_name": "Site M25 between M25 J20 and M25 J19 (LM322); GPS Ref: 507677;201355 - 506977:198986; B",
+    "min": 0.5,
+    "std": 417.5303459509946
+  },
+  {
+    "point": "LM325",
+    "median": 870,
+    "site_name": "Site M25 between M25 J21 and M25 J21A (LM325); GPS Ref: 511641;203194 - 512612:203082; A",
+    "min": 20,
+    "std": 466.4759807930818
+  },
+  {
+    "point": "LM326",
+    "median": 612,
+    "site_name": "Site M25 between M25 J21A and M25 J21 (LM326); GPS Ref: 512666;203038 - 511669:203181; B",
+    "min": 0.5,
+    "std": 334.6455255441927
+  },
+  {
+    "point": "LM327",
+    "median": 786.5,
+    "site_name": "Site M25 between M25 J21A and M25 J22 (LM327); GPS Ref: 512612;203082 - 518721:203244; A",
+    "min": 1,
+    "std": 440.9826546434674
+  },
+  {
+    "point": "LM330",
+    "median": 786,
+    "site_name": "Site M25 between M25 J23 and M25 J22 (LM330); GPS Ref: 522504;200111 - 518660:203185; B",
+    "min": 0.25,
+    "std": 410.9362037359735
+  },
+  {
+    "point": "LM331",
+    "median": 942,
+    "site_name": "Site M25 between M25 J23 and M25 J24 (LM331); GPS Ref: 522512;200130 - 526480:200219; A",
+    "min": 49.5,
+    "std": 450.9772713103747
+  },
+  {
+    "point": "LM332",
+    "median": 883.25,
+    "site_name": "Site M25 between M25 J24 and M25 J23 (LM332); GPS Ref: 526578;200259 - 522504:200111; B",
+    "min": 23,
+    "std": 451.02929939973137
+  },
+  {
+    "point": "LM333",
+    "median": 869.5,
+    "site_name": "Site M25 between M25 J24 and M25 J25 (LM333); GPS Ref: 526480;200219 - 534837:200076; A",
+    "min": 46,
+    "std": 421.89993307644806
+  },
+  {
+    "point": "LM334",
+    "median": 828,
+    "site_name": "Site M25 between M25 J25 and M25 J24 (LM334); GPS Ref: 535037;200054 - 526578:200259; B",
+    "min": 47.5,
+    "std": 409.1897301493692
+  },
+  {
+    "point": "LM338",
+    "median": 711.25,
+    "site_name": "Site M25 between M25 J27 and M25 J26 (LM338); GPS Ref: 547017;199979 - 540420:199647; B",
+    "min": 2,
+    "std": 361.5405621021199
+  },
+  {
+    "point": "LM339",
+    "median": 766,
+    "site_name": "Site M25 between M25 J27 and M25 J28 (LM339); GPS Ref: 547010;199996 - 556765:192407; A",
+    "min": 2,
+    "std": 425.6893574863569
+  },
+  {
+    "point": "LM340",
+    "median": 780,
+    "site_name": "Site M25 between M25 J28 and M25 J27 (LM340); GPS Ref: 556761;192384 - 547017:199979; B",
+    "min": 1,
+    "std": 408.84857106061105
+  },
+  {
+    "point": "LM341",
+    "median": 711,
+    "site_name": "Site M25 between M25 J28 and M25 J29 (LM341); GPS Ref: 556765;192407 - 558239:188994; A",
+    "min": 5,
+    "std": 377.4429032283766
+  },
+  {
+    "point": "LM342",
+    "median": 746,
+    "site_name": "Site M25 between M25 J29 and M25 J28 (LM342); GPS Ref: 558213;188992 - 556761:192384; B",
+    "min": 12,
+    "std": 386.9980195394431
+  },
+  {
+    "point": "LM343",
+    "median": 673,
+    "site_name": "Site M25 between M25 J29 and M25 J30 (LM343); GPS Ref: 558239;188994 - 557536:180488; A",
+    "min": 5,
+    "std": 329.8298018453667
+  },
+  {
+    "point": "LM344",
+    "median": 698,
+    "site_name": "Site M25 between M25 J30 and M25 J29 (LM344); GPS Ref: 557514;180457 - 558213:188992; B",
+    "min": 0.5,
+    "std": 355.98874276275615
+  },
+  {
+    "point": "LM345A",
+    "median": 806,
+    "site_name": "Site M25 between M25 J2 and M25 J3 (LM345A); GPS Ref: 555726;172086 - 552750:167797; A",
+    "min": 21,
+    "std": 412.71486909094824
+  },
+  {
+    "point": "LM346A",
+    "median": 715,
+    "site_name": "Site M25 between M25 J3 and M25 J2 (LM346A); GPS Ref: 552729;167788 - 555706:172062; B",
+    "min": 1,
+    "std": 398.37023595990496
+  },
+  {
+    "point": "LM351",
+    "median": 658,
+    "site_name": "Site M25 between M25 J3 and M25 J4 (LM351); GPS Ref: 552750;167797 - 550282:163150; A",
+    "min": 1,
+    "std": 359.79868994034985
+  },
+  {
+    "point": "LM355",
+    "median": 239,
+    "site_name": "Site M25 between M25 J5 and A21 (LM355); GPS Ref: 549538;156875 - 549898:155861; A",
+    "min": 0.5,
+    "std": 144.4228771508809
+  },
+  {
+    "point": "LM356",
+    "median": 311,
+    "site_name": "Site M25 between A21 and M25 J5 (LM356); GPS Ref: 549887;155856 - 549524:156888; B",
+    "min": 3,
+    "std": 182.86507621632276
+  },
+  {
+    "point": "LM357",
+    "median": 585,
+    "site_name": "Site M25 between M25 J4 and M25 J5 (LM357); GPS Ref: 550282;163150 - 549538:156875; A",
+    "min": 0.25,
+    "std": 309.6932649834761
+  },
+  {
+    "point": "LM358",
+    "median": 577,
+    "site_name": "Site M25 between M25 J5 and M25 J4 (LM358); GPS Ref: 549524;156888 - 550268:163006; B",
+    "min": 8.75,
+    "std": 318.94332307370325
+  },
+  {
+    "point": "LM359B",
+    "median": 713.5,
+    "site_name": "Site M25 between M25 J5 and M25 J6 (LM359B); GPS Ref: 549538;156875 - 535256:152863; A",
+    "min": 1,
+    "std": 382.98424803932863
+  },
+  {
+    "point": "LM360B",
+    "median": 820,
+    "site_name": "Site M25 between M25 J6 and M25 J5 (LM360B); GPS Ref: 535088;152868 - 549524:156888; B",
+    "min": 14,
+    "std": 435.9435196299011
+  },
+  {
+    "point": "LM362",
+    "median": 935,
+    "site_name": "Site M25 between M25 J8 and M25 J7 (LM362); GPS Ref: 525769;152598 - 530705:153325; B",
+    "min": 24,
+    "std": 503.87619064734713
+  },
+  {
+    "point": "LM364",
+    "median": 914,
+    "site_name": "Site M25 between M25 J9 and M25 J8 (LM364); GPS Ref: 517154;157433 - 525769:152598; B",
+    "min": 0.25,
+    "std": 487.35022690784035
+  },
+  {
+    "point": "LM366",
+    "median": 914,
+    "site_name": "Site M25 between M25 J9 Anti Clockwise and M25 J9 Anti Clockwise (LM366); GPS Ref: 516594;158420 - 517154:157433; B",
+    "min": 0.25,
+    "std": 487.35022690783956
+  },
+  {
+    "point": "LM380",
+    "median": 491,
+    "site_name": "Site M27 between M27 J10 and M27 J9 (LM380); GPS Ref: 457655;107786 - 452740:108549; B",
+    "min": 4,
+    "std": 375.2111948582754
+  },
+  {
+    "point": "LM381",
+    "median": 576.5,
+    "site_name": "Site M27 between M27 J10 and M27 J11 (LM381); GPS Ref: 457922;107723 - 459332:107094; A",
+    "min": 11,
+    "std": 428.20571450481225
+  },
+  {
+    "point": "LM383",
+    "median": 633,
+    "site_name": "Site M27 between M27 J11 and M27 J12 (LM383); GPS Ref: 459332;107094 - 465949:104538; A",
+    "min": 8,
+    "std": 463.12459721759217
+  },
+  {
+    "point": "LM384",
+    "median": 587,
+    "site_name": "Site M27 between M27 J12 and M27 J11 (LM384); GPS Ref: 465990;104517 - 459436:107033; B",
+    "min": 5,
+    "std": 443.697192705
+  },
+  {
+    "point": "LM390",
+    "median": 702,
+    "site_name": "Site M27 between M27 J4 and M27 J3 (LM390); GPS Ref: 440433;117978 - 436950:116406; B",
+    "min": 6,
+    "std": 486.30816915983905
+  },
+  {
+    "point": "LM400",
+    "median": 559.5,
+    "site_name": "Site M27 between M27 J9 and M27 J8 (LM400); GPS Ref: 452740;108549 - 448476:111157; B",
+    "min": 12,
+    "std": 411.17720933374335
+  },
+  {
+    "point": "LM403A",
+    "median": 543,
+    "site_name": "Site M2 between M2 J2 and M2 J1 (LM403A); GPS Ref: 571819;167863 - 570193:169556; B",
+    "min": 7,
+    "std": 325.45773072676053
+  },
+  {
+    "point": "LM404A",
+    "median": 498,
+    "site_name": "Site M2 between M2 J1 and M2 J2 (LM404A); GPS Ref: 570188;169584 - 571833:167890; A",
+    "min": 9,
+    "std": 337.10560551883157
+  },
+  {
+    "point": "LM408A",
+    "median": 393,
+    "site_name": "Site M2 between M2 J3 and M2 J4 (LM408A); GPS Ref: 574930;162593 - 580083:162843; A",
+    "min": 2,
+    "std": 267.00597228916956
+  },
+  {
+    "point": "LM410",
+    "median": 331,
+    "site_name": "Site M2 between M2 J4 and M2 J5 (LM410); GPS Ref: 580083;162843 - 585515:162383; A",
+    "min": 6,
+    "std": 223.1241825264974
+  },
+  {
+    "point": "LM411",
+    "median": 310,
+    "site_name": "Site M2 between M2 J6 and M2 J5 (LM411); GPS Ref: 601536;159660 - 585518:162365; B",
+    "min": 0.5,
+    "std": 197.9561513932544
+  },
+  {
+    "point": "LM412",
+    "median": 285,
+    "site_name": "Site M2 between M2 J5 and M2 J6 (LM412); GPS Ref: 585515;162383 - 601387:159699; A",
+    "min": 0.25,
+    "std": 201.29951493186718
+  },
+  {
+    "point": "LM413",
+    "median": 305,
+    "site_name": "Site M2 between M2 J7 and M2 J6 (LM413); GPS Ref: 603999;159834 - 601536:159660; B",
+    "min": 0.5,
+    "std": 201.40340035459252
+  },
+  {
+    "point": "LM414",
+    "median": 250,
+    "site_name": "Site M2 between M2 J6 and M2 J7 (LM414); GPS Ref: 601387;159699 - 603991:159842; A",
+    "min": 0.25,
+    "std": 192.1451639224634
+  },
+  {
+    "point": "LM416",
+    "median": 432,
+    "site_name": "Site M32 between M4 J19 and M32 J1 (LM416); GPS Ref: 364174;179373 - 363519:178660; B",
+    "min": 6,
+    "std": 311.95737926296124
+  },
+  {
+    "point": "LM421",
+    "median": 718,
+    "site_name": "Site M3 between M3 J11 and M3 J10 (LM421); GPS Ref: 447895;126693 - 449081:128135; B",
+    "min": 18,
+    "std": 449.69271124301184
+  },
+  {
+    "point": "LM422",
+    "median": 690.5,
+    "site_name": "Site M3 between M3 J10 and M3 J11 (LM422); GPS Ref: 449130;128175 - 447906:126678; A",
+    "min": 18,
+    "std": 455.70054415595877
+  },
+  {
+    "point": "LM423",
+    "median": 649,
+    "site_name": "Site M3 between M3 J11 Northbound and M3 J11 Northbound (LM423); GPS Ref: 447269;125842 - 447895:126693; B",
+    "min": 14,
+    "std": 389.9335428980448
+  },
+  {
+    "point": "LM424",
+    "median": 628,
+    "site_name": "Site M3 between M3 J11 Southbound and M3 J11 Southbound (LM424); GPS Ref: 447906;126678 - 447207:125596; A",
+    "min": 17,
+    "std": 401.00223620868957
+  },
+  {
+    "point": "LM425",
+    "median": 748,
+    "site_name": "Site M3 between M3 J12 and M3 J11 (LM425); GPS Ref: 445135;121954 - 447269:125842; B",
+    "min": 17,
+    "std": 446.57250842804996
+  },
+  {
+    "point": "LM451",
+    "median": 621,
+    "site_name": "Site M3 between M3 J10 and M3 J9 (LM451); GPS Ref: 449081;128135 - 449698:130405; B",
+    "min": 17,
+    "std": 383.8779499708123
+  },
+  {
+    "point": "LM453",
+    "median": 350,
+    "site_name": "Site M3 between M3 J9 and M3 J8 (LM453); GPS Ref: 449698;130405 - 457366:145730; B",
+    "min": 7,
+    "std": 212.1765223424945
+  },
+  {
+    "point": "LM454",
+    "median": 351.5,
+    "site_name": "Site M3 between M3 J8 and M3 J9 (LM454); GPS Ref: 457660;145987 - 449710:130565; A",
+    "min": 0.5,
+    "std": 214.71565430831168
+  },
+  {
+    "point": "LM457",
+    "median": 475.19,
+    "site_name": "Site M40 between M40 J11 and M40 J12 (LM457); GPS Ref: 447187;241735 - 437249:254903; A",
+    "min": 0.5,
+    "std": 291.5601969535194
+  },
+  {
+    "point": "LM458",
+    "median": 481.63,
+    "site_name": "Site M40 between M40 J12 and M40 J11 (LM458); GPS Ref: 437262;254918 - 447139:241896; B",
+    "min": 0.25,
+    "std": 276.0962598818837
+  },
+  {
+    "point": "LM459",
+    "median": 484.375,
+    "site_name": "Site M40 between M40 J12 and M40 J13 (LM459); GPS Ref: 437249;254903 - 430537:260388; A",
+    "min": 9.75,
+    "std": 315.28379550829453
+  },
+  {
+    "point": "LM460",
+    "median": 508.875,
+    "site_name": "Site M40 between M40 J13 and M40 J12 (LM460); GPS Ref: 430534;260412 - 437262:254918; B",
+    "min": 0.25,
+    "std": 295.4682452855527
+  },
+  {
+    "point": "LM461",
+    "median": 461,
+    "site_name": "Site M40 between M40 J13 and M40 J14 (LM461); GPS Ref: 430537;260388 - 428027:262170; A",
+    "min": 11.75,
+    "std": 296.8091954534662
+  },
+  {
+    "point": "LM462",
+    "median": 479.25,
+    "site_name": "Site M40 between M40 J14 and M40 J13 (LM462); GPS Ref: 428000;262199 - 430534:260412; B",
+    "min": 19,
+    "std": 278.07454944589483
+  },
+  {
+    "point": "LM463",
+    "median": 548.125,
+    "site_name": "Site M40 between M40 J14 and M40 J15 (LM463); GPS Ref: 428027;262170 - 426576:262434; A",
+    "min": 22.25,
+    "std": 380.5423713381615
+  },
+  {
+    "point": "LM467",
+    "median": 509,
+    "site_name": "Site M40 between M40 J16 and M42 J3A (LM467); GPS Ref: 415271;270856 - 413061:272672; A",
+    "min": 1,
+    "std": 352.72037993743817
+  },
+  {
+    "point": "LM468",
+    "median": 554,
+    "site_name": "Site M40 between M42 J3A and M40 J16 (LM468); GPS Ref: 413133;272855 - 415107:270963; B",
+    "min": 11,
+    "std": 333.43509210296276
+  },
+  {
+    "point": "LM497",
+    "median": 499.25,
+    "site_name": "Site M42 between M42 J2 and M42 J1 (LM497); GPS Ref: 403632;273746 - 397290:273023; B",
+    "min": 0.25,
+    "std": 350.1370689621802
+  },
+  {
+    "point": "LM498",
+    "median": 515.5,
+    "site_name": "Site M42 between M42 J1 and M42 J2 (LM498); GPS Ref: 397277;273045 - 403523:273760; A",
+    "min": 1,
+    "std": 334.79419725110654
+  },
+  {
+    "point": "LM499",
+    "median": 711.25,
+    "site_name": "Site M42 between M42 J4 and M42 J3A (LM499); GPS Ref: 414663;275821 - 413133:272855; B",
+    "min": 18.5,
+    "std": 417.79856184196603
+  },
+  {
+    "point": "LM500",
+    "median": 709,
+    "site_name": "Site M42 between M42 J3A and M42 J4 (LM500); GPS Ref: 413061;272672 - 414594:275718; A",
+    "min": 16,
+    "std": 445.53603410563323
+  },
+  {
+    "point": "LM504",
+    "median": 610,
+    "site_name": "Site M42 between M42 J3 and M42 J3A (LM504); GPS Ref: 407793;272988 - 413061:272672; A",
+    "min": 0.25,
+    "std": 407.9337979896164
+  },
+  {
+    "point": "LM507",
+    "median": 770,
+    "site_name": "Site M42 between M42 J6 and M42 J5 (LM507); GPS Ref: 419831;283063 - 417165:278610; B",
+    "min": 2,
+    "std": 470.88857542953616
+  },
+  {
+    "point": "LM508",
+    "median": 732,
+    "site_name": "Site M42 between M42 J5 and M42 J6 (LM508); GPS Ref: 417049;278576 - 419805:283048; A",
+    "min": 1,
+    "std": 463.6817804387056
+  },
+  {
+    "point": "LM512A",
+    "median": 732,
+    "site_name": "Site M42 between M42 J7 and M42 J7a (LM512A); GPS Ref: 419739;286644 - 419331:288553; A",
+    "min": 1,
+    "std": 463.68178043870523
+  },
+  {
+    "point": "LM515",
+    "median": 392,
+    "site_name": "Site M42 between M42 J10 and M42 J9 (LM515); GPS Ref: 424443;300763 - 418720:293572; B",
+    "min": 7,
+    "std": 243.81219556887172
+  },
+  {
+    "point": "LM516",
+    "median": 390,
+    "site_name": "Site M42 between M42 J9 and M42 J10 (LM516); GPS Ref: 418606;293355 - 424298:300570; A",
+    "min": 0.25,
+    "std": 264.4659240256354
+  },
+  {
+    "point": "LM521",
+    "median": 54.25,
+    "site_name": "Site M45 between M1 J17 and M45 J1 (LM521); GPS Ref: 458619;270013 - 448761:270766; A",
+    "min": 0.25,
+    "std": 42.67408516370161
+  },
+  {
+    "point": "LM522",
+    "median": 55,
+    "site_name": "Site M45 between M45 J1 and M1 J17 (LM522); GPS Ref: 448728;270786 - 458810:269750; B",
+    "min": 0.25,
+    "std": 43.97378804062301
+  },
+  {
+    "point": "LM525",
+    "median": 90,
+    "site_name": "Site M49 between M5 J18A and M4 J22 (LM525); GPS Ref: 353287;178324 - 354379:185827; B",
+    "min": 0.25,
+    "std": 71.8266361663027
+  },
+  {
+    "point": "LM529",
+    "median": 921,
+    "site_name": "Site M4 between M25 J15 and M4 J5 (LM529); GPS Ref: 504637;178385 - 501357:178010; A",
+    "min": 32,
+    "std": 448.2291024999402
+  },
+  {
+    "point": "LM531",
+    "median": 638,
+    "site_name": "Site M4 between M4 J11 and M4 J12 (LM531); GPS Ref: 471645;168633 - 465083:171489; A",
+    "min": 9,
+    "std": 410.13944206415204
+  },
+  {
+    "point": "LM532",
+    "median": 673,
+    "site_name": "Site M4 between M4 J12 and M4 J11 (LM532); GPS Ref: 465003;171579 - 471518:168689; B",
+    "min": 0.25,
+    "std": 423.08844126801205
+  },
+  {
+    "point": "LM534",
+    "median": 538,
+    "site_name": "Site M4 between M4 J13 and M4 J12 (LM534); GPS Ref: 447953;172866 - 465003:171579; B",
+    "min": 1,
+    "std": 337.98845683879927
+  },
+  {
+    "point": "LM538",
+    "median": 520,
+    "site_name": "Site M4 between M4 J15 and M4 J14 (LM538); GPS Ref: 419126;180936 - 435996:172827; B",
+    "min": 0.5,
+    "std": 331.1994751999394
+  },
+  {
+    "point": "LM539",
+    "median": 462,
+    "site_name": "Site M4 between M4 J15 and M4 J16 (LM539); GPS Ref: 419257;180895 - 410294:182903; A",
+    "min": 1,
+    "std": 298.4822654228944
+  },
+  {
+    "point": "LM540",
+    "median": 474,
+    "site_name": "Site M4 between M4 J16 and M4 J15 (LM540); GPS Ref: 410182;182976 - 419126:180936; B",
+    "min": 0.5,
+    "std": 309.7455499404742
+  },
+  {
+    "point": "LM541",
+    "median": 464,
+    "site_name": "Site M4 between M4 J16 and M4 J17 (LM541); GPS Ref: 410294;182903 - 391717:179568; A",
+    "min": 1,
+    "std": 301.37536963923003
+  },
+  {
+    "point": "LM542",
+    "median": 467,
+    "site_name": "Site M4 between M4 J17 and M4 J16 (LM542); GPS Ref: 391586;179577 - 410182:182976; B",
+    "min": 1,
+    "std": 308.66543896901055
+  },
+  {
+    "point": "LM543",
+    "median": 457,
+    "site_name": "Site M4 between M4 J17 and M4 J18 (LM543); GPS Ref: 391717;179568 - 375880:178152; A",
+    "min": 0.25,
+    "std": 296.2340063707818
+  },
+  {
+    "point": "LM544",
+    "median": 463,
+    "site_name": "Site M4 between M4 J18 and M4 J17 (LM544); GPS Ref: 375756;178177 - 391586:179577; B",
+    "min": 0.25,
+    "std": 301.41174815457975
+  },
+  {
+    "point": "LM545",
+    "median": 510,
+    "site_name": "Site M4 between M4 J18 and M4 J19 (LM545); GPS Ref: 375880;178152 - 364174:179373; A",
+    "min": 3,
+    "std": 334.82668824805
+  },
+  {
+    "point": "LM546",
+    "median": 506,
+    "site_name": "Site M4 between M4 J19 and M4 J18 (LM546); GPS Ref: 364146;179492 - 375756:178177; B",
+    "min": 1,
+    "std": 338.5024647986427
+  },
+  {
+    "point": "LM547",
+    "median": 674,
+    "site_name": "Site M4 between M4 J10 and M4 J11 (LM547); GPS Ref: 479718;170870 - 471645:168633; A",
+    "min": 0.25,
+    "std": 427.3514200586756
+  },
+  {
+    "point": "LM549",
+    "median": 650,
+    "site_name": "Site M4 between M4 J19 and M4 J20 (LM549); GPS Ref: 364174;179373 - 361791:183747; A",
+    "min": 0.75,
+    "std": 417.70959219937623
+  },
+  {
+    "point": "LM550",
+    "median": 586,
+    "site_name": "Site M4 between M4 J20 and M4 J19 (LM550); GPS Ref: 361799;183766 - 364146:179492; B",
+    "min": 1.25,
+    "std": 419.50277522598395
+  },
+  {
+    "point": "LM551",
+    "median": 311,
+    "site_name": "Site M4 between M4 J20 and M4 J21 (LM551); GPS Ref: 361791;183747 - 360127:185747; A",
+    "min": 1,
+    "std": 213.76378165003894
+  },
+  {
+    "point": "LM564",
+    "median": 854,
+    "site_name": "Site M4 between M4 J5 and M4 J6 (LM564); GPS Ref: 501357;178010 - 496184:179121; A",
+    "min": 1,
+    "std": 443.9020166268969
+  },
+  {
+    "point": "LM565",
+    "median": 845,
+    "site_name": "Site M4 between M4 J6 and M4 J5 (LM565); GPS Ref: 496075;179171 - 501158:177952; B",
+    "min": 2,
+    "std": 439.03257185022727
+  },
+  {
+    "point": "LM568",
+    "median": 686,
+    "site_name": "Site M4 between M4 J7 and M4 J8 (LM568); GPS Ref: 493394;180030 - 488758:178569; A",
+    "min": 37,
+    "std": 421.12169812440203
+  },
+  {
+    "point": "LM569",
+    "median": 763,
+    "site_name": "Site M4 between M4 J8 and M4 J7 (LM569); GPS Ref: 488597;178539 - 493388:180047; B",
+    "min": 19,
+    "std": 431.9838614280026
+  },
+  {
+    "point": "LM570",
+    "median": 706,
+    "site_name": "Site M4 between M4 J8 and M4 J10 (LM570); GPS Ref: 488758;178569 - 479718:170870; A",
+    "min": 0.25,
+    "std": 416.55120595955367
+  },
+  {
+    "point": "LM571",
+    "median": 711,
+    "site_name": "Site M4 between M4 J10 and M4 J8 (LM571); GPS Ref: 479683;170865 - 488597:178539; B",
+    "min": 0.25,
+    "std": 416.8412431222212
+  },
+  {
+    "point": "LM572",
+    "median": 136,
+    "site_name": "Site M50 between M50 J1 and M5 J8 (LM572); GPS Ref: 388660;237383 - 390774:238923; B",
+    "min": 0.75,
+    "std": 115.23710236711489
+  },
+  {
+    "point": "LM573",
+    "median": 168,
+    "site_name": "Site M50 between M5 J8 and M50 J1 (LM573); GPS Ref: 390825;238728 - 388928:237454; A",
+    "min": 0.25,
+    "std": 120.92927265253303
+  },
+  {
+    "point": "LM574",
+    "median": 116,
+    "site_name": "Site M50 between M50 J2 and M50 J1 (LM574); GPS Ref: 375389;233210 - 388660:237383; B",
+    "min": 0.25,
+    "std": 95.32517177780672
+  },
+  {
+    "point": "LM575",
+    "median": 140,
+    "site_name": "Site M50 between M50 J1 and M50 J2 (LM575); GPS Ref: 388928;237454 - 375387:233195; A",
+    "min": 0.25,
+    "std": 97.31602353561993
+  },
+  {
+    "point": "LM576",
+    "median": 107,
+    "site_name": "Site M50 between M50 J3 and M50 J2 (LM576); GPS Ref: 366709;226183 - 375389:233210; B",
+    "min": 0.25,
+    "std": 84.30700959762322
+  },
+  {
+    "point": "LM577",
+    "median": 131,
+    "site_name": "Site M50 between M50 J2 and M50 J3 (LM577); GPS Ref: 375387;233195 - 366789:226218; A",
+    "min": 0.25,
+    "std": 89.23566909352432
+  },
+  {
+    "point": "LM604",
+    "median": 322,
+    "site_name": "Site M54 between M54 J1 and M54 J2 (LM604); GPS Ref: 394305;304663 - 391660:304486; A",
+    "min": 0.5,
+    "std": 231.08739374674786
+  },
+  {
+    "point": "LM605",
+    "median": 318,
+    "site_name": "Site M54 between M54 J2 and M54 J1 (LM605); GPS Ref: 391493;304496 - 394079:304695; B",
+    "min": 0.75,
+    "std": 213.8053503970344
+  },
+  {
+    "point": "LM606",
+    "median": 187,
+    "site_name": "Site M54 between M54 J2 and M54 J3 (LM606); GPS Ref: 391660;304486 - 379909:306774; A",
+    "min": 0.25,
+    "std": 154.81818265763616
+  },
+  {
+    "point": "LM607",
+    "median": 181,
+    "site_name": "Site M54 between M54 J3 and M54 J2 (LM607); GPS Ref: 379751;306809 - 391493:304496; B",
+    "min": 0.25,
+    "std": 154.77877516305873
+  },
+  {
+    "point": "LM608",
+    "median": 207,
+    "site_name": "Site M54 between M54 J3 and M54 J4 (LM608); GPS Ref: 379909;306774 - 372675:309140; A",
+    "min": 1,
+    "std": 165.42733175306142
+  },
+  {
+    "point": "LM609",
+    "median": 195,
+    "site_name": "Site M54 between M54 J4 and M54 J3 (LM609); GPS Ref: 372540;309180 - 379751:306809; B",
+    "min": 0.5,
+    "std": 156.312714432877
+  },
+  {
+    "point": "LM619",
+    "median": 288,
+    "site_name": "Site M55 between M55 J3 and M55 J1 (LM619); GPS Ref: 341449;434899 - 352850:434074; A",
+    "min": 1,
+    "std": 251.8477525920062
+  },
+  {
+    "point": "LM623",
+    "median": 410,
+    "site_name": "Site M55 between M55 J1 and M6 J32 (LM623); GPS Ref: 352850;434074 - 354174:434707; A",
+    "min": 1.25,
+    "std": 290.86265854686144
+  },
+  {
+    "point": "LM642",
+    "median": 700.5,
+    "site_name": "Site M56 between M56 J4 and M56 J5 (LM642); GPS Ref: 381716;387505 - 380781:386173; A",
+    "min": 16,
+    "std": 450.0073965036103
+  },
+  {
+    "point": "LM645",
+    "median": 605,
+    "site_name": "Site M56 between M56 J6 and M56 J5 (LM645); GPS Ref: 380095;384805 - 380770:386187; B",
+    "min": 0.25,
+    "std": 443.52756766188116
+  },
+  {
+    "point": "LM681",
+    "median": 427,
+    "site_name": "Site M5 between M5 J10 and M5 J11 (LM681); GPS Ref: 390478;225613 - 389691:221251; A",
+    "min": 0.25,
+    "std": 279.0364125083763
+  },
+  {
+    "point": "LM682",
+    "median": 437.75,
+    "site_name": "Site M5 between M5 J12 and M5 J11A (LM682); GPS Ref: 380020;210935 - 388133:217698; B",
+    "min": 0.25,
+    "std": 318.64738165755125
+  },
+  {
+    "point": "LM683",
+    "median": 421,
+    "site_name": "Site M5 between M5 J11A and M5 J12 (LM683); GPS Ref: 388164;217702 - 380117:211008; A",
+    "min": 0.25,
+    "std": 293.0523551627259
+  },
+  {
+    "point": "LM685",
+    "median": 440,
+    "site_name": "Site M5 between M5 J11 and M5 J11A (LM685); GPS Ref: 389691;221251 - 388164:217702; A",
+    "min": 5,
+    "std": 294.1884369609805
+  },
+  {
+    "point": "LM687",
+    "median": 421,
+    "site_name": "Site M5 between M5 J12 and M5 J13 (LM687); GPS Ref: 380117;211008 - 377864:206863; A",
+    "min": 6,
+    "std": 284.69670585066154
+  },
+  {
+    "point": "LM690",
+    "median": 440,
+    "site_name": "Site M5 between M5 J15 and M5 J14 (LM690); GPS Ref: 361783;183762 - 368799:193211; B",
+    "min": 7,
+    "std": 309.22373493804855
+  },
+  {
+    "point": "LM691",
+    "median": 413.5,
+    "site_name": "Site M5 between M5 J14 and M5 J15 (LM691); GPS Ref: 368813;193200 - 361806:183751; A",
+    "min": 0.5,
+    "std": 279.53707744538906
+  },
+  {
+    "point": "LM694",
+    "median": 580,
+    "site_name": "Site M5 between M5 J17 and M5 J16 (LM694); GPS Ref: 357733;181247 - 360649:183284; B",
+    "min": 0.25,
+    "std": 414.82105855552226
+  },
+  {
+    "point": "LM695",
+    "median": 600,
+    "site_name": "Site M5 between M5 J16 and M5 J17 (LM695); GPS Ref: 360732;183307 - 357816:181259; A",
+    "min": 0.25,
+    "std": 403.72711178487464
+  },
+  {
+    "point": "LM696",
+    "median": 528.5,
+    "site_name": "Site M5 between M5 J18A and M5 J17 (LM696); GPS Ref: 353287;178324 - 357733:181247; B",
+    "min": 5,
+    "std": 398.5714646913158
+  },
+  {
+    "point": "LM714",
+    "median": 318,
+    "site_name": "Site M5 between M5 J26 and M5 J25 (LM714); GPS Ref: 316387;119962 - 325463:124763; B",
+    "min": 0.25,
+    "std": 279.9166441414328
+  },
+  {
+    "point": "LM717",
+    "median": 314,
+    "site_name": "Site M5 between M5 J26 and M5 J27 (LM717); GPS Ref: 316505;119970 - 304802:114055; A",
+    "min": 2.25,
+    "std": 242.46411650503836
+  },
+  {
+    "point": "LM718",
+    "median": 286,
+    "site_name": "Site M5 between M5 J28 and M5 J27 (LM718); GPS Ref: 302703;107732 - 304712:113973; B",
+    "min": 0.25,
+    "std": 253.61395388657914
+  },
+  {
+    "point": "LM722",
+    "median": 602,
+    "site_name": "Site M5 between M5 J2 and M5 J1 (LM722); GPS Ref: 398786;288274 - 401734:290372; B",
+    "min": 0.25,
+    "std": 388.9274444997688
+  },
+  {
+    "point": "LM723",
+    "median": 620,
+    "site_name": "Site M5 between M5 J1 and M5 J2 (LM723); GPS Ref: 401809;290504 - 398840:288343; A",
+    "min": 0.75,
+    "std": 395.08722143051847
+  },
+  {
+    "point": "LM724",
+    "median": 500,
+    "site_name": "Site M5 between M5 J3 and M5 J2 (LM724); GPS Ref: 399017;283384 - 398786:288274; B",
+    "min": 0.25,
+    "std": 345.2382596518425
+  },
+  {
+    "point": "LM725",
+    "median": 515,
+    "site_name": "Site M5 between M5 J2 and M5 J3 (LM725); GPS Ref: 398840;288343 - 399116:283533; A",
+    "min": 0.25,
+    "std": 326.24572642139077
+  },
+  {
+    "point": "LM732",
+    "median": 463,
+    "site_name": "Site M5 between M5 J4 and M5 J3 (LM732); GPS Ref: 396908;275568 - 399017:283384; B",
+    "min": 7,
+    "std": 320.671919724509
+  },
+  {
+    "point": "LM733",
+    "median": 493,
+    "site_name": "Site M5 between M5 J3 and M5 J4 (LM733); GPS Ref: 399116;283533 - 396949:275670; A",
+    "min": 0.25,
+    "std": 314.6087251696788
+  },
+  {
+    "point": "LM734",
+    "median": 451.5,
+    "site_name": "Site M5 between M5 J4A and M5 J4 (LM734); GPS Ref: 394966;272167 - 396908:275568; B",
+    "min": 0.5,
+    "std": 330.8211712636421
+  },
+  {
+    "point": "LM735",
+    "median": 445.25,
+    "site_name": "Site M5 between M5 J4 and M5 J4A (LM735); GPS Ref: 396949;275670 - 395183:272500; A",
+    "min": 1,
+    "std": 325.4952717815691
+  },
+  {
+    "point": "LM738",
+    "median": 566,
+    "site_name": "Site M5 between M5 J7 and M5 J6 (LM738); GPS Ref: 387718;252216 - 389274:257107; B",
+    "min": 5,
+    "std": 371.07328719690327
+  },
+  {
+    "point": "LM739",
+    "median": 429,
+    "site_name": "Site M5 between M5 J6 and M5 J7 (LM739); GPS Ref: 389343;257260 - 387814:252348; A",
+    "min": 0.25,
+    "std": 266.1848795713939
+  },
+  {
+    "point": "LM741",
+    "median": 429,
+    "site_name": "Site M5 between M5 J7 and M5 J8 (LM741); GPS Ref: 387814;252348 - 390774:238923; A",
+    "min": 0.25,
+    "std": 266.1848795713939
+  },
+  {
+    "point": "LM745",
+    "median": 397,
+    "site_name": "Site M5 between M5 J8 and M5 J9 (LM745); GPS Ref: 390774;238923 - 391627:233184; A",
+    "min": 4.25,
+    "std": 269.55322214298536
+  },
+  {
+    "point": "LM746",
+    "median": 633,
+    "site_name": "Site M5 between M5 J1 and M6 J8 (LM746); GPS Ref: 401734;290372 - 401587:295576; B",
+    "min": 1,
+    "std": 385.6055949746374
+  },
+  {
+    "point": "LM747",
+    "median": 654.5,
+    "site_name": "Site M5 between M6 J8 and M5 J1 (LM747); GPS Ref: 401599;295598 - 401809:290504; A",
+    "min": 0.75,
+    "std": 400.44569598891394
+  },
+  {
+    "point": "LM75",
+    "median": 322.5,
+    "site_name": "Site A3(M) between A3(M) J3 and A3(M) J2 (LM75); GPS Ref: 469508;108914 - 470463:112353; B",
+    "min": 2,
+    "std": 209.1943053886881
+  },
+  {
+    "point": "LM751",
+    "median": 317,
+    "site_name": "Site M602 between M602 J2 and M602 J3 (LM751); GPS Ref: 378117;398891 - 381335:398173; A",
+    "min": 6,
+    "std": 204.4167884192135
+  },
+  {
+    "point": "LM77",
+    "median": 357,
+    "site_name": "Site A3(M) between A3(M) J4 and A3(M) J3 (LM77); GPS Ref: 469300;107364 - 469508:108914; B",
+    "min": 2,
+    "std": 241.97446666427527
+  },
+  {
+    "point": "LM778",
+    "median": 444,
+    "site_name": "Site M60 between M60 J19 and M60 J20 (LM778); GPS Ref: 384332;404869 - 386170:404535; A",
+    "min": 11,
+    "std": 353.4109951089647
+  },
+  {
+    "point": "LM779",
+    "median": 462,
+    "site_name": "Site M60 between M60 J20 and M60 J19 (LM779); GPS Ref: 386169;404471 - 384437:404808; B",
+    "min": 12,
+    "std": 366.3328883792794
+  },
+  {
+    "point": "LM78",
+    "median": 350.5,
+    "site_name": "Site A3(M) between A3(M) J3 and A3(M) J4 (LM78); GPS Ref: 469568;109039 - 469310:107411; A",
+    "min": 9.5,
+    "std": 247.8014206200696
+  },
+  {
+    "point": "LM780",
+    "median": 358,
+    "site_name": "Site M60 between M60 J20 and M60 J21 (LM780); GPS Ref: 386170;404535 - 389487:403389; A",
+    "min": 8,
+    "std": 293.2398289750195
+  },
+  {
+    "point": "LM79",
+    "median": 447,
+    "site_name": "Site A3(M) between A3(M) J5 and A3(M) J4 (LM79); GPS Ref: 469272;105464 - 469300:107364; B",
+    "min": 10.5,
+    "std": 318.65750608786107
+  },
+  {
+    "point": "LM798",
+    "median": 665,
+    "site_name": "Site M60 between M60 J3 and M60 J4 (LM798); GPS Ref: 385057;389125 - 384386:389126; A",
+    "min": 16,
+    "std": 487.3146478478504
+  },
+  {
+    "point": "LM799",
+    "median": 662,
+    "site_name": "Site M60 between M60 J4 and M60 J3 (LM799); GPS Ref: 384127;389263 - 385045:389141; B",
+    "min": 10,
+    "std": 465.9895296597837
+  },
+  {
+    "point": "LM812",
+    "median": 476,
+    "site_name": "Site M61 between M61 J2 and M61 J4 (LM812); GPS Ref: 375109;403847 - 370372:405427; A",
+    "min": 2,
+    "std": 324.0162029653195
+  },
+  {
+    "point": "LM821",
+    "median": 409,
+    "site_name": "Site M61 between M61 J9 and M61 J8 (LM821); GPS Ref: 358542;424849 - 358787:419553; B",
+    "min": 6,
+    "std": 288.67120289067856
+  },
+  {
+    "point": "LM846",
+    "median": 519,
+    "site_name": "Site M62 between M62 J20 and M62 J21 (LM846); GPS Ref: 389554;410009 - 392933:411821; A",
+    "min": 0.25,
+    "std": 315.0398037258447
+  },
+  {
+    "point": "LM847",
+    "median": 624,
+    "site_name": "Site M62 between M62 J21 and M62 J20 (LM847); GPS Ref: 392675;411630 - 389748:410082; B",
+    "min": 0.75,
+    "std": 400.1776496502029
+  },
+  {
+    "point": "LM848",
+    "median": 567,
+    "site_name": "Site M62 between M62 J21 and M62 J22 (LM848); GPS Ref: 392933;411821 - 398778:414805; A",
+    "min": 1,
+    "std": 343.0537256861482
+  },
+  {
+    "point": "LM849",
+    "median": 532,
+    "site_name": "Site M62 between M62 J22 and M62 J21 (LM849); GPS Ref: 398778;414786 - 392675:411630; B",
+    "min": 0.25,
+    "std": 345.1563288040658
+  },
+  {
+    "point": "LM850",
+    "median": 547,
+    "site_name": "Site M62 between M62 J22 and M62 J23 (LM850); GPS Ref: 398778;414805 - 409138:418113; A",
+    "min": 0.25,
+    "std": 331.69082986072107
+  },
+  {
+    "point": "LM851",
+    "median": 552,
+    "site_name": "Site M62 between M62 J23 and M62 J22 (LM851); GPS Ref: 409291;418184 - 398778:414786; B",
+    "min": 1,
+    "std": 351.8404843053048
+  },
+  {
+    "point": "LM852",
+    "median": 503,
+    "site_name": "Site M62 between M62 J23 and M62 J24 (LM852); GPS Ref: 409138;418113 - 411098:419482; A",
+    "min": 1,
+    "std": 307.7494610886151
+  },
+  {
+    "point": "LM853",
+    "median": 514,
+    "site_name": "Site M62 between M62 J24 and M62 J23 (LM853); GPS Ref: 411116;419472 - 409291:418184; B",
+    "min": 1,
+    "std": 323.71652089657925
+  },
+  {
+    "point": "LM856",
+    "median": 639.5,
+    "site_name": "Site M62 between M62 J25 and M62 J26 (LM856); GPS Ref: 416319;422073 - 417789:426026; A",
+    "min": 0.25,
+    "std": 428.33299154205486
+  },
+  {
+    "point": "LM857",
+    "median": 566,
+    "site_name": "Site M62 between M62 J26 and M62 J25 (LM857); GPS Ref: 418163;426718 - 416443:422181; B",
+    "min": 0.25,
+    "std": 361.15904808144614
+  },
+  {
+    "point": "LM862A",
+    "median": 480.25,
+    "site_name": "Site M62 between M62 J30 and M62 J31 (LM862A); GPS Ref: 435782;425925 - 439964:423760; A",
+    "min": 1,
+    "std": 378.7507939812769
+  },
+  {
+    "point": "LM862B",
+    "median": 435,
+    "site_name": "Site M62 between M62 J31 and M62 J32 (LM862B); GPS Ref: 439964;423760 - 444195:423721; A",
+    "min": 11.5,
+    "std": 327.86989052839994
+  },
+  {
+    "point": "LM862D",
+    "median": 279,
+    "site_name": "Site M62 between M62 J32 and M62 J32a (LM862D); GPS Ref: 444195;423721 - 446878:424114; A",
+    "min": 5.5,
+    "std": 219.26344577072766
+  },
+  {
+    "point": "LM863",
+    "median": 470,
+    "site_name": "Site M62 between M62 J30 and M62 J29 (LM863); GPS Ref: 435913;425911 - 432305:426145; B",
+    "min": 8,
+    "std": 352.386660866882
+  },
+  {
+    "point": "LM863A",
+    "median": 484,
+    "site_name": "Site M62 between M62 J31 and M62 J30 (LM863A); GPS Ref: 439962;423741 - 435913:425911; B",
+    "min": 4.5,
+    "std": 370.78418889914246
+  },
+  {
+    "point": "LM863B",
+    "median": 354,
+    "site_name": "Site M62 between M62 J32 and M62 J31 (LM863B); GPS Ref: 444334;423754 - 439962:423741; B",
+    "min": 0.25,
+    "std": 272.7526241783679
+  },
+  {
+    "point": "LM863D",
+    "median": 414,
+    "site_name": "Site M62 between M62 J32a and M62 J32 (LM863D); GPS Ref: 446865;424063 - 444334:423754; B",
+    "min": 6,
+    "std": 305.6886014762037
+  },
+  {
+    "point": "LM864",
+    "median": 279,
+    "site_name": "Site M62 between M62 J33 and M62 J34 (LM864); GPS Ref: 448450;422403 - 455809:422261; A",
+    "min": 5.5,
+    "std": 219.26344577072754
+  },
+  {
+    "point": "LM865",
+    "median": 280,
+    "site_name": "Site M62 between M62 J34 and M62 J33 (LM865); GPS Ref: 455925;422243 - 448471:422376; B",
+    "min": 1.5,
+    "std": 223.38288116094307
+  },
+  {
+    "point": "LM876",
+    "median": 465,
+    "site_name": "Site M62 between M62 J8 and M62 J7 (LM876); GPS Ref: 357171;391162 - 350639:389909; B",
+    "min": 0.5,
+    "std": 355.1582826975458
+  },
+  {
+    "point": "LM882",
+    "median": 148,
+    "site_name": "Site M65 between M65 J1 and M65 J1A (LM882); GPS Ref: 356442;424555 - 355602:424743; B",
+    "min": 1,
+    "std": 140.508535754403
+  },
+  {
+    "point": "LM883",
+    "median": 165,
+    "site_name": "Site M65 between M65 J1A and M65 J1 (LM883); GPS Ref: 355610;424871 - 356438:424579; A",
+    "min": 1,
+    "std": 166.8835986350091
+  },
+  {
+    "point": "LM884",
+    "median": 198,
+    "site_name": "Site M65 between M65 J2 and M65 J1 (LM884); GPS Ref: 358542;424832 - 356442:424555; B",
+    "min": 1,
+    "std": 199.79487202030657
+  },
+  {
+    "point": "LM885",
+    "median": 192,
+    "site_name": "Site M65 between M65 J1 and M65 J2 (LM885); GPS Ref: 356438;424579 - 358524:424849; A",
+    "min": 1,
+    "std": 188.76232420878867
+  },
+  {
+    "point": "LM926",
+    "median": 692,
+    "site_name": "Site M6 between M6 J10 and M6 J10A (LM926); GPS Ref: 399121;298548 - 396831:303503; A",
+    "min": 0.25,
+    "std": 406.28865345375755
+  },
+  {
+    "point": "LM927",
+    "median": 754,
+    "site_name": "Site M6 between M6 J10A and M6 J10 (LM927); GPS Ref: 396811;303588 - 399134:298682; B",
+    "min": 0.25,
+    "std": 379.72021292991536
+  },
+  {
+    "point": "LM934",
+    "median": 612,
+    "site_name": "Site M6 between M6 J14 and M6 J15 (LM934); GPS Ref: 390257;325409 - 384858:342058; A",
+    "min": 0.25,
+    "std": 350.51742129652723
+  },
+  {
+    "point": "LM935",
+    "median": 627,
+    "site_name": "Site M6 between M6 J15 and M6 J14 (LM935); GPS Ref: 384875;342071 - 390311:325498; B",
+    "min": 0.75,
+    "std": 347.330158820284
+  },
+  {
+    "point": "LM936",
+    "median": 597,
+    "site_name": "Site M6 between M6 J15 and M6 J16 (LM936); GPS Ref: 384858;342058 - 377753:352370; A",
+    "min": 0.25,
+    "std": 334.968490816554
+  },
+  {
+    "point": "LM937",
+    "median": 587,
+    "site_name": "Site M6 between M6 J16 and M6 J15 (LM937); GPS Ref: 377734;352490 - 384875:342071; B",
+    "min": 0.25,
+    "std": 329.6309370603025
+  },
+  {
+    "point": "LM938",
+    "median": 679,
+    "site_name": "Site M6 between M6 J16 and M6 J17 (LM938); GPS Ref: 377753;352370 - 376788:362038; A",
+    "min": 0.25,
+    "std": 379.5570214277715
+  },
+  {
+    "point": "LM939",
+    "median": 708,
+    "site_name": "Site M6 between M6 J17 and M6 J16 (LM939); GPS Ref: 376796;362076 - 377734:352490; B",
+    "min": 0.25,
+    "std": 399.7188280646127
+  },
+  {
+    "point": "LM942",
+    "median": 717,
+    "site_name": "Site M6 between M6 J18 and M6 J19 (LM942); GPS Ref: 374217;367047 - 372367:379443; A",
+    "min": 0.25,
+    "std": 396.3048621133151
+  },
+  {
+    "point": "LM943",
+    "median": 717,
+    "site_name": "Site M6 between M6 J19 and M6 J18 (LM943); GPS Ref: 372201;379520 - 374220:367162; B",
+    "min": 0.25,
+    "std": 396.20464272910294
+  },
+  {
+    "point": "LM956",
+    "median": 545,
+    "site_name": "Site M6 between M6 J22 and M6 J23 (LM956); GPS Ref: 361333;393806 - 358027:397347; A",
+    "min": 0.25,
+    "std": 406.1435788933806
+  },
+  {
+    "point": "LM958",
+    "median": 535,
+    "site_name": "Site M6 between M6 J23 and M6 J24 (LM958); GPS Ref: 358027;397347 - 356653:399349; A",
+    "min": 8,
+    "std": 379.20196384285964
+  },
+  {
+    "point": "LM960",
+    "median": 630.5,
+    "site_name": "Site M6 between M6 J24 and M6 J25 (LM960); GPS Ref: 356653;399349 - 356306:400818; A",
+    "min": 11,
+    "std": 448.4950036414449
+  },
+  {
+    "point": "LM965",
+    "median": 523,
+    "site_name": "Site M6 between M6 J26 and M6 J25 (LM965); GPS Ref: 353839;404391 - 356187:401054; B",
+    "min": 6,
+    "std": 350.6519408863721
+  },
+  {
+    "point": "LM967",
+    "median": 500,
+    "site_name": "Site M6 between M6 J27 and M6 J26 (LM967); GPS Ref: 354143;410624 - 353839:404391; B",
+    "min": 0.25,
+    "std": 353.5534601913546
+  },
+  {
+    "point": "LM981",
+    "median": 346.5,
+    "site_name": "Site M6 between M6 J33 and M6 J32 (LM981); GPS Ref: 348864;454835 - 354174:434707; B",
+    "min": 0.5,
+    "std": 272.9752351345171
+  },
+  {
+    "point": "LM998C",
+    "median": 643,
+    "site_name": "Site M6 between M6 J3 and M6 J3A (LM998C); GPS Ref: 434600;285053 - 421646:286614; A",
+    "min": 0.25,
+    "std": 390.5837514338888
+  },
+  {
+    "point": "LM998D",
+    "median": 519,
+    "site_name": "Site M6 between M6 J3A and M6 J4 (LM998D); GPS Ref: 421646;286614 - 420042:286561; A",
+    "min": 0.25,
+    "std": 295.5492402004801
+  },
+  {
+    "point": "LM999C",
+    "median": 648,
+    "site_name": "Site M6 between M6 J3A and M6 J3 (LM999C); GPS Ref: 422448;286244 - 434401:285186; B",
+    "min": 1,
+    "std": 384.7190136553482
+  },
+  {
+    "point": "LM999D",
+    "median": 509,
+    "site_name": "Site M6 between M6 J4 and M6 J3A (LM999D); GPS Ref: 419917;286608 - 422448:286244; B",
+    "min": 0.25,
+    "std": 293.97407935432983
+  }
+]

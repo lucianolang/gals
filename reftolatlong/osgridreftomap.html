@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Convert OS Grid Reference points to WGS84 Lat/Lon</title>
+<meta charset="utf-8"/>
+<style type="text/css">
+form  { max-width: 300px; }
+input { font-size: 20px;}
+input.keybutton { width: 60px; }
+</style>
+<script src="latlon.js"></script>
+<script src="geo.js"></script>
+<script src="coordtransform.js"></script>
+<script src="osgridref.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var gridrefin = $('#osgridref');
+  gridrefin.change( function() {
+    recalc();
+  });
+  gridrefin.focus();
+  gridrefin.keypress(function(ev) {
+    if(ev.which == 13) { /* enter */
+      ev.preventDefault();
+      $('#showmap').focus();
+    }
+    else if(ev.which != 32 && (ev.which < 48 || ev.which > 57)) { /* not space or digit */
+      /*console.log("ignoring ", ev.which);*/
+      ev.preventDefault();
+    }
+  });
+  if(!navigator.userAgent.match(/(Android|iPad|iPhone|iPod)/i)) {
+    $('#dosygic').css("visibility", "hidden");
+  }
+});
+function recalc() {
+  var gr = $('#osgridref').val().replace(/[^0-9]/g, '')
+  /*console.log("got ", gr);*/
+  if(gr.length != 12) {
+    $('#WGS84').html("");
+    $('#showmap').attr('disabled', true);
+    $('#dosygic').attr('disabled', true);
+    /*console.log("invalid osgridref");*/
+    return;
+  }
+  var osgridref = new OsGridRef(gr.substring(0, 6), gr.substring(6, 12));
+  /*console.log("osgridref", osgridref);*/
+  var pWGS = CoordTransform.convertOSGB36toWGS84(OsGridRef.osGridToLatLong(osgridref));
+  WGS84Lat = pWGS.lat().toFixed(8);
+  WGS84Lon = pWGS.lon().toFixed(8);
+  WGS84LatLon = WGS84Lat + ',' + WGS84Lon;
+  $('#WGS84').html(WGS84LatLon);
+  $('#showmap').attr('disabled', false);
+  if(navigator.userAgent.match(/(Android|iPad|iPhone|iPod)/i))
+    $('#dosygic').attr('disabled', false);
+}
+function showMap() {
+  window.open('http://maps.google.co.uk/?q=loc:' + WGS84LatLon + '&ll=' + WGS84LatLon + '&t=m');
+}
+function doGeo() {
+  document.location='geo:' + WGS84LatLon;
+}
+function doSygic() {
+  document.location='com.sygic.aura://coordinate|' + WGS84Lon + '|' + WGS84Lat + '|drive';
+}
+</script>
+</head>
+<body style="margin: 8px">
+<!--
+<script>
+  document.write(navigator.userAgent);
+</script>
+-->
+<form>
+<fieldset><legend>OS Grid Ref to WGS84 Lat/Lon</legend>
+<table>
+<tr>
+<td colspan="2">Input 12 digit grid ref (E then N)</td>
+</tr>
+<tr>
+<td colspan="2"><input name="osgridref" id="osgridref" onkeyup="recalc()" type="tel"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><b>WGS84</b></td> 
+<td><output id="WGS84"></output></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td align="left"><input type="button" id="showmap" value="Show Map" onclick="showMap()" disabled="true"/></td>
+<td align="right"><input type="button" id="dosygic" value="Start Sygic" onclick="doSygic()" disabled="true"/></td>
+</tr>
+<!--
+<tr>
+<td colspan="2"><input type="button" id="navigateto" value="Navigate To" onclick="doGeo()"/></td>
+</tr>
+-->
+</table>
+</fieldset>
+</form>
+<div style="max-width: 300px;">
+<p>This utility is provided without any warranty of correctness or fitness for purpose. Use at your own risk.</p>
+<p>Please send any feedback to <a href='mailto:burtoogle@gmail.com'>Mark Burton</a>.</p>
+<p>Click <a href="https://github.com/smartavionics/osgridreftomap/zipball/master">here</a> to download a zip file of the HTML and Javascript files and <a href="http://github.com/smartavionics/osgridreftomap">here</a> to browse the change history.</p>
+<p>Many thanks to Chris Veness for writing the Javascript that does all the hard work (see <a href="http://www.movable-type.co.uk/scripts/latlong-gridref.html">Convert between Latitude/Longitude &amp; OS National Grid Reference points</a>).</p>
+</div>
+</body>
+</html>
+
